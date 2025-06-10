@@ -2,11 +2,11 @@ import Database from "../Database/index.js";
 import { v4 as uuidv4 } from "uuid";
 
 export function findAssignmentsForCourse(courseId) {
-  return Database.assignments.filter(a => a.course === courseId);
+  return Database.assignments.filter((a) => a.course === courseId);
 }
 
 export function findAssignmentById(aid) {
-  return Database.assignments.find(a => a._id === aid);
+  return Database.assignments.find((a) => a._id === aid);
 }
 
 export function createAssignment(data) {
@@ -23,5 +23,5 @@ export function updateAssignment(aid, updates) {
 }
 
 export function deleteAssignment(aid) {
-  Database.assignments = Database.assignments.filter(a => a._id !== aid);
+  Database.assignments = Database.assignments.filter((a) => a._id !== aid);
 }

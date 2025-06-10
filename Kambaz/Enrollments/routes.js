@@ -1,7 +1,6 @@
 import * as dao from "./dao.js";
 
 export default function EnrollmentRoutes(app) {
-
   function resolveUserId(paramUserId, session) {
     if (paramUserId === "current") {
       const cu = session.currentUser;

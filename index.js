@@ -1,7 +1,7 @@
-import express from 'express';
+import express from "express";
 import Hello from "./Hello.js";
 import Lab5 from "./Lab5/index.js";
-import cors from "cors";  
+import cors from "cors";
 import "dotenv/config";
 import session from "express-session";
 import UserRoutes from "./Kambaz/Users/routes.js";
@@ -13,11 +13,11 @@ import EnrollmentRoutes from "./Kambaz/Enrollments/routes.js";
 const app = express();
 
 app.use(
-    cors({
-   credentials: true,
-   origin: process.env.NETLIFY_URL || "http://localhost:5173",
-    })
-);  
+  cors({
+    credentials: true,
+    origin: process.env.NETLIFY_URL || "http://localhost:5173",
+  })
+);
 const sessionOptions = {
   secret: process.env.SESSION_SECRET || "kambaz",
   resave: false,
@@ -32,9 +32,7 @@ if (process.env.NODE_ENV !== "development") {
   };
 }
 app.use(session(sessionOptions));
-app.use(
-  session(sessionOptions)
-);
+app.use(session(sessionOptions));
 
 app.use(express.json());
 UserRoutes(app);
@@ -43,5 +41,5 @@ ModuleRoutes(app);
 EnrollmentRoutes(app);
 AssignmentRoutes(app);
 Lab5(app);
-Hello(app)
-  app.listen(process.env.PORT || 4000)
+Hello(app);
+app.listen(process.env.PORT || 4000);
