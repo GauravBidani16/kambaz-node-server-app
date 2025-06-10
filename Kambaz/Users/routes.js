@@ -38,13 +38,16 @@ export default function UserRoutes(app) {
   app.post("/api/users/signup", signup);
   
   const signin = (req, res) => {
-    console.log("→ [SIGNIN] req.body =", req.body);
+    console.log(req.body);
+    
+    console.log("SIGNIN req.body =", req.body);
+
     const { username, password } = req.body;
     const user = dao.findUserByCredentials(username, password);
     console.log(
       user
-        ? `→ [SIGNIN] success for ${username}`
-        : `→ [SIGNIN] failed for ${username}`
+        ? `SIGNIN success for ${username}`
+        : `SIGNIN failed for ${username}`
     );
     if (user) {
       req.session.currentUser = user;

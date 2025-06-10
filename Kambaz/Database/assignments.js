@@ -4,7 +4,7 @@ export default
     "_id": "A101",
     "title": "Propulsion Assignment",
     "course": "RS101",
-        "descriptionHtml": "<p>The assignment is <span class=\\\"text-danger\\\">available online</span></p>\n<p>Submit a link to the landing page of your Web application running on <a href=\\\"https://www.netlify.com\\\" target=\\\"_blank\\\">Netlify</a>.</p>\n<p>The landing page should include the following:</p>\n<ul>\n  <li>Your full name and section</li>\n  <li>Links to each of the lab assignments</li>\n  <li>Link to the <a href=\\\"/Kambaz\\\">Kanbas</a> application</li>\n  <li>Links to all relevant source code repositories</li>\n</ul>\n<p>The <a href=\\\"/Kambaz\\\">Kanbas</a> application should include a link to navigate back to the landing page.</p>",
+    "descriptionHtml": "<p>The assignment is <span class=\\\"text-danger\\\">available online</span></p>\n<p>Submit a link to the landing page of your Web application running on <a href=\\\"https://www.netlify.com\\\" target=\\\"_blank\\\">Netlify</a>.</p>\n<p>The landing page should include the following:</p>\n<ul>\n  <li>Your full name and section</li>\n  <li>Links to each of the lab assignments</li>\n  <li>Link to the <a href=\\\"/Kambaz\\\">Kanbas</a> application</li>\n  <li>Links to all relevant source code repositories</li>\n</ul>\n<p>The <a href=\\\"/Kambaz\\\">Kanbas</a> application should include a link to navigate back to the landing page.</p>",
     "points": 100,
     "group": "ASSIGNMENTS",
     "displayGradeAs": "Percentage",
@@ -30,7 +30,13 @@ export default
     "group": "ASSIGNMENTS",
     "displayGradeAs": "Percentage",
     "submissionType": "Online",
-    "entryOptions": { "text": true, "website": false, "media": false, "annotation": false, "file": true },
+    "entryOptions": {
+      "text": true,
+      "website": false,
+      "media": false,
+      "annotation": false,
+      "file": true
+    },
     "assignTo": "Everyone",
     "dueDate": "2024-05-20T23:59",
     "availableFrom": "2024-05-13T00:00",
@@ -45,7 +51,13 @@ export default
     "group": "ASSIGNMENTS",
     "displayGradeAs": "Points",
     "submissionType": "Online",
-    "entryOptions": { "text": false, "website": false, "media": false, "annotation": false, "file": true },
+    "entryOptions": {
+      "text": false,
+      "website": false,
+      "media": false,
+      "annotation": false,
+      "file": true
+    },
     "assignTo": "Everyone",
     "dueDate": "2024-05-27T23:59",
     "availableFrom": "2024-05-20T00:00",
@@ -60,7 +72,13 @@ export default
     "group": "QUIZZES",
     "displayGradeAs": "Points",
     "submissionType": "Online",
-    "entryOptions": { "text": false, "website": false, "media": false, "annotation": false, "file": false },
+    "entryOptions": {
+      "text": false,
+      "website": false,
+      "media": false,
+      "annotation": false,
+      "file": false
+    },
     "assignTo": "Everyone",
     "dueDate": "2024-05-15T23:59",
     "availableFrom": "2024-05-08T00:00",
@@ -75,7 +93,13 @@ export default
     "group": "ASSIGNMENTS",
     "displayGradeAs": "Percentage",
     "submissionType": "Online",
-    "entryOptions": { "text": false, "website": false, "media": false, "annotation": false, "file": true },
+    "entryOptions": {
+      "text": false,
+      "website": false,
+      "media": false,
+      "annotation": false,
+      "file": true
+    },
     "assignTo": "Everyone",
     "dueDate": "2024-05-22T23:59",
     "availableFrom": "2024-05-15T00:00",
@@ -90,7 +114,13 @@ export default
     "group": "ASSIGNMENTS",
     "displayGradeAs": "Percentage",
     "submissionType": "Online",
-    "entryOptions": { "text": false, "website": false, "media": false, "annotation": false, "file": true },
+    "entryOptions": {
+      "text": false,
+      "website": false,
+      "media": false,
+      "annotation": false,
+      "file": true
+    },
     "assignTo": "Everyone",
     "dueDate": "2024-05-29T23:59",
     "availableFrom": "2024-05-22T00:00",
@@ -105,7 +135,13 @@ export default
     "group": "ASSIGNMENTS",
     "displayGradeAs": "Points",
     "submissionType": "Online",
-    "entryOptions": { "text": false, "website": false, "media": false, "annotation": false, "file": true },
+    "entryOptions": {
+      "text": false,
+      "website": false,
+      "media": false,
+      "annotation": false,
+      "file": true
+    },
     "assignTo": "Everyone",
     "dueDate": "2024-06-05T23:59",
     "availableFrom": "2024-05-29T00:00",
@@ -120,7 +156,13 @@ export default
     "group": "ASSIGNMENTS",
     "displayGradeAs": "Percentage",
     "submissionType": "Online",
-    "entryOptions": { "text": false, "website": false, "media": false, "annotation": false, "file": true },
+    "entryOptions": {
+      "text": false,
+      "website": false,
+      "media": false,
+      "annotation": false,
+      "file": true
+    },
     "assignTo": "Everyone",
     "dueDate": "2024-06-12T23:59",
     "availableFrom": "2024-06-05T00:00",
@@ -135,11 +177,16 @@ export default
     "group": "ASSIGNMENTS",
     "displayGradeAs": "Points",
     "submissionType": "Online",
-    "entryOptions": { "text": false, "website": false, "media": false, "annotation": false, "file": false },
+    "entryOptions": {
+      "text": false,
+      "website": false,
+      "media": false,
+      "annotation": false,
+      "file": false
+    },
     "assignTo": "Everyone",
     "dueDate": "2024-06-19T23:59",
     "availableFrom": "2024-06-12T00:00",
     "availableUntil": ""
   }
-
-];
+]
