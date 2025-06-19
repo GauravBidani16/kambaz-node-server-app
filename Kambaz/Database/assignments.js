@@ -4,7 +4,7 @@ export default
     "_id": "A101",
     "title": "Propulsion Assignment",
     "course": "RS101",
-    "descriptionHtml": "<p>The assignment is <span class=\\\"text-danger\\\">available online</span></p>\n<p>Submit a link to the landing page of your Web application running on <a href=\\\"https://www.netlify.com\\\" target=\\\"_blank\\\">Netlify</a>.</p>\n<p>The landing page should include the following:</p>\n<ul>\n  <li>Your full name and section</li>\n  <li>Links to each of the lab assignments</li>\n  <li>Link to the <a href=\\\"/Kambaz\\\">Kanbas</a> application</li>\n  <li>Links to all relevant source code repositories</li>\n</ul>\n<p>The <a href=\\\"/Kambaz\\\">Kanbas</a> application should include a link to navigate back to the landing page.</p>",
+        "descriptionHtml": "<p>The assignment is <span class=\\\"text-danger\\\">available online</span></p>\n<p>Submit a link to the landing page of your Web application running on <a href=\\\"https://www.netlify.com\\\" target=\\\"_blank\\\">Netlify</a>.</p>\n<p>The landing page should include the following:</p>\n<ul>\n  <li>Your full name and section</li>\n  <li>Links to each of the lab assignments</li>\n  <li>Link to the <a href=\\\"/Kambaz\\\">Kanbas</a> application</li>\n  <li>Links to all relevant source code repositories</li>\n</ul>\n<p>The <a href=\\\"/Kambaz\\\">Kanbas</a> application should include a link to navigate back to the landing page.</p>",
     "points": 100,
     "group": "ASSIGNMENTS",
     "displayGradeAs": "Percentage",
