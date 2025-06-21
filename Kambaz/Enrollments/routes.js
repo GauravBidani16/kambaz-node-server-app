@@ -27,9 +27,8 @@ export default function EnrollmentRoutes(app) {
     const uid = resolveUserId(req.params.userId, req.session);
     if (!uid) return res.sendStatus(401);
     const cid = req.params.courseId;
-    const existing = await dao
-      .findEnrollmentsForUser(uid)
-      .then((list) => list.find((e) => e.course === cid));
+    const existing = await dao.findEnrollmentsForUser(uid)
+      .then(list => list.find(e => e.course === cid));
     if (existing) return res.sendStatus(409);
     const created = await dao.enrollUserInCourse(uid, cid);
     res.status(201).json(created);

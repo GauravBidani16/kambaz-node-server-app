@@ -1,23 +1,23 @@
 {
-  "type": "module",
-  "name": "kambaz-node-server-app",
-  "version": "1.0.0",
+   "type": "module",
+   "name": "kambaz-node-server-app",
+   "version": "1.0.0",
   "description": "node server for kambaz web application",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
+   },
   "author": "Gaurav Bidani",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^6.0.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "express-session": "^1.18.1",
-    "mongoose": "^8.16.0",
-    "mongose": "^0.0.2-security",
-    "uuid": "^11.1.0"
-  }
+   "license": "ISC",
+   "dependencies": {
+      "bcrypt": "^6.0.0",
+      "cors": "^2.8.5",
+      "dotenv": "^16.5.0",
+      "express": "^5.1.0",
+      "express-session": "^1.18.1",
+      "mongoose": "^8.16.0",
+      "mongose": "^0.0.2-security",
+      "uuid": "^11.1.0"
+   }
 }

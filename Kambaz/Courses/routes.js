@@ -1,5 +1,6 @@
-import * as dao from "./dao.js";
-import * as modulesDao from "../Modules/dao.js";
+
+import * as dao            from "./dao.js";
+import * as modulesDao     from "../Modules/dao.js";
 import * as enrollmentsDao from "../Enrollments/dao.js";
 
 export default function CourseRoutes(app) {
@@ -38,10 +39,7 @@ export default function CourseRoutes(app) {
   });
 
   app.post("/api/courses/:courseId/modules", async (req, res) => {
-    const m = await modulesDao.createModule({
-      ...req.body,
-      course: req.params.courseId,
-    });
+    const m = await modulesDao.createModule({ ...req.body, course: req.params.courseId });
     res.json(m);
   });
   app.get("/api/courses/:courseId/users", async (req, res) => {
@@ -54,6 +52,7 @@ export default function CourseRoutes(app) {
       res.status(500).json({ message: err.message });
     }
   });
+
 
   app.get("/api/courses/:cid/users", async (req, res) => {
     try {

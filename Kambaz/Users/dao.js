@@ -1,11 +1,11 @@
 import UserModel from "./model.js";
-import bcrypt from "bcrypt";
-import model from "./model.js";
-import { v4 as uuidv4 } from "uuid";
+import bcrypt    from "bcrypt";
+import model from "./model.js"; 
+import { v4 as uuidv4 } from "uuid";  
 
 export const createUser = (user) => {
   const { _id, ...u } = user;
-  const newUser = { ...u, _id: uuidv4() };
+  const newUser       = { ...u, _id: uuidv4() };
   return model.create(newUser);
 };
 
@@ -13,13 +13,17 @@ export const findUserById = async (userId) => {
   return UserModel.findById(userId).exec();
 };
 
+
 export const findUserByUsername = async (username) => {
   return UserModel.findOne({ username }).exec();
 };
 
 export const findUserByCredentials = async (username, password) => {
   const user = await UserModel.findOne({
-    $or: [{ username }, { loginId: username }],
+    $or: [
+      { username },
+      { loginId: username }
+    ]
   }).exec();
 
   if (!user) return null;
@@ -45,10 +49,12 @@ export const updateUser = async (userId, updates) => {
   ).exec();
 };
 
+
 export const deleteUser = async (userId) => {
   return UserModel.findByIdAndDelete(userId).exec();
 };
-export const findUsersByRole = (role) => UserModel.find({ role }).exec();
+export const findUsersByRole = (role) =>
+  UserModel.find({ role }).exec();
 
 export const findUsersByPartialName = (partialName) => {
   const nameStr = Array.isArray(partialName)
@@ -59,9 +65,13 @@ export const findUsersByPartialName = (partialName) => {
 
   return model
     .find({
-      $or: [{ firstName: { $regex: regex } }, { lastName: { $regex: regex } }],
+      $or: [
+        { firstName: { $regex: regex } },
+        { lastName:  { $regex: regex } },
+      ],
     })
-    .exec();
+    .exec();  
 };
 
-export const findAllUsers = () => UserModel.find().exec();
+export const findAllUsers = () =>
+  UserModel.find().exec();

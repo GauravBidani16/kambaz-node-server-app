@@ -2,14 +2,14 @@ import mongoose from "mongoose";
 
 const assignmentSchema = new mongoose.Schema(
   {
-    _id: String,
-    title: { type: String, required: true },
+    _id:      String,
+    title:    { type: String, required: true },
     descriptionHtml: String,
-    points: Number,
+    points:   Number,
     availableFrom: String,
-    dueDate: String,
+    dueDate:  String,
     availableUntil: String,
-    course: { type: String, ref: "CourseModel", required: true },
+    course:   { type: String, ref: "CourseModel", required: true },
   },
   { collection: "assignments" }
 );

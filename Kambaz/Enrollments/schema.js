@@ -4,9 +4,9 @@ const enrollmentSchema = new mongoose.Schema(
   {
     _id: String,
     course: { type: String, ref: "CourseModel", required: true },
-    user: { type: String, ref: "UserModel", required: true },
-    grade: Number,
-    letterGrade: String,
+    user:   { type: String, ref: "UserModel",   required: true },
+    grade:          Number,
+    letterGrade:    String,
     enrollmentDate: { type: Date, default: Date.now },
     status: {
       type: String,

@@ -24,6 +24,7 @@ mongoose
   .then(() => {
     console.log('MongoDB connected');
 
+    // Only start Express once DB is up
     const app = express();
 
     const allowedOrigins = [
