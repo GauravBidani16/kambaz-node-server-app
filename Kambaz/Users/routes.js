@@ -1,6 +1,7 @@
 import * as dao from "./dao.js";
 import * as courseDao from "../Courses/dao.js";
 import * as enrollmentsDao from "../Enrollments/dao.js";
+import { v4 as uuidv4 } from "uuid";
 
 export default function UserRoutes(app) {
   const createCourse = async (req, res) => {

@@ -18,7 +18,6 @@ export const findUserByUsername = async (username) => {
 };
 
 export const findUserByCredentials = async (username, password) => {
-  console.log("findUserByCredentials called with:", username, password);
   const user = await UserModel.findOne({
     $or: [{ username }, { loginId: username }],
   }).exec();
